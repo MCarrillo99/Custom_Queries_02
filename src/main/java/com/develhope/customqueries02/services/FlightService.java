@@ -1,9 +1,8 @@
 package com.develhope.customqueries02.services;
 
 import com.develhope.customqueries02.entities.Flight;
-import com.develhope.customqueries02.entities.utilities.StatusEnum;
+import com.develhope.customqueries02.utilities.StatusEnum;
 import com.develhope.customqueries02.repositories.FlightsRepo;
-import com.develhope.customqueries02.entities.Flight;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -46,7 +45,10 @@ public class FlightService {
         return generatedString;
     }
 
-    //TODO scrivere commmento per questo metodo
+    /**
+     * this method generates a random status value
+     * @return a random status value
+     */
     private StatusEnum randomStatusEnumValue(){
         StatusEnum randomStatus = null;
         StatusEnum[] status = StatusEnum.values();

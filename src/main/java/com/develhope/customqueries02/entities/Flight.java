@@ -1,6 +1,6 @@
 package com.develhope.customqueries02.entities;
 
-import com.develhope.customqueries02.entities.utilities.StatusEnum;
+import com.develhope.customqueries02.utilities.StatusEnum;
 
 import javax.persistence.*;
 

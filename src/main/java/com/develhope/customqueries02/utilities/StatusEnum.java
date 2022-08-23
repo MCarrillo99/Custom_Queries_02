@@ -1,4 +1,4 @@
-package com.develhope.customqueries02.entities.utilities;
+package com.develhope.customqueries02.utilities;
 
 public enum StatusEnum {
     ONTIME,
