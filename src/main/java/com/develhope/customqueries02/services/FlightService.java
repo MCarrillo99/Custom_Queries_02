@@ -19,13 +19,13 @@ public class FlightService {
      * this method allows to generate a series of flights using the generateString() for set the values
      * @param n is the number of flights that will be generated
      */
-    public void randomCreate(int n){
+    public List<Flight> randomCreate(int n){
+        List<Flight> flights = new ArrayList<>();
         for (int i = 0; i < n; i++) {
             Flight flight = new Flight(generateString(), generateString(), generateString(), randomStatusEnumValue());
-            List<Flight> flights = new ArrayList<>();
             flights.add(flight);
-            flightRepo.saveAllAndFlush(flights);
         }
+        return flightRepo.saveAllAndFlush(flights);
     }
 
     /**
